@@ -1,0 +1,103 @@
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #2f3640;
+  margin-bottom: 25px;
+}
+
+.dashboard-container h3 {
+  color: #40739e;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.dashboard-container input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.dashboard-container input:focus {
+  outline: none;
+  border-color: #40739e;
+  box-shadow: 0 0 5px rgba(64, 115, 158, 0.5);
+}
+
+/* Buttons */
+.dashboard-container button {
+  padding: 10px 20px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #40739e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dashboard-container button:hover {
+  background-color: #2f3640;
+}
+
+/* Task cards */
+.task-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 15px 0;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.task-card h4 {
+  margin: 0 0 10px 0;
+  color: #273c75;
+}
+
+.task-card p {
+  margin: 0 0 15px 0;
+  color: #718093;
+}
+
+/* Edit mode inputs inside task card */
+.task-card input {
+  max-width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-container input,
+  .dashboard-container button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .task-card {
+    padding: 15px;
+  }
+}
