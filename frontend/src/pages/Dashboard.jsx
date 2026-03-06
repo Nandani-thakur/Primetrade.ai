@@ -10,7 +10,7 @@ export default function Dashboard() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [userRole, setUserRole] = useState("");
-  const [userId, setUserId] = useState(""); // current logged in user's ID
+  const [userId, setUserId] = useState(""); 
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
@@ -21,7 +21,7 @@ export default function Dashboard() {
     if (token) {
       const payload = JSON.parse(atob(token.split('.')[1]));
       setUserRole(payload.role);
-      setUserId(payload.id); // save logged-in user's id
+      setUserId(payload.id); 
     }
     fetchTasks();
   }, []);
@@ -49,7 +49,7 @@ export default function Dashboard() {
     }
   };
 
-  // Start editing a task
+  
   const startEdit = (task) => {
     if (task.createdBy !== userId && userRole !== "admin") {
       alert("You can only edit your own tasks!");

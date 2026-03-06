@@ -17,20 +17,6 @@ exports.createTask = async (req, res) => {
   }
 };
 
-// exports.getTasks = async (req, res) => {
-//   try {
-//     let tasks;
-//     if (req.user.role === "admin") {
-//       tasks = await Task.find();
-//     } else {
-//       tasks = await Task.find({ createdBy: req.user.id });
-//     }
-//     res.json(tasks);
-//   } catch (err) {
-//     console.error("Get Tasks Error:", err.message);
-//     res.status(500).json({ message: "Server error" });
-//   }
-// };
 
 exports.getTasks = async (req, res) => {
   try {
