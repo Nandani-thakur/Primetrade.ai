@@ -33,7 +33,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: "https://primetrade-ai-jtt8.vercel.app", // frontend deployed link
+  origin: "https://primetrade-ai-2ss5.vercel.app", // frontend deployed link
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
