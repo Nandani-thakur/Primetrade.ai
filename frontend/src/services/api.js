@@ -20,7 +20,7 @@ import axios from "axios";
 
 // Change baseURL from localhost to deployed backend
 const API = axios.create({
-  baseURL: "https://primetrade-ai-nyor.vercel.app/api/v1" 
+  baseURL: "https://primetrade-ai-delta.vercel.app/api/v1" 
 });
 
 API.interceptors.request.use((req) => {
