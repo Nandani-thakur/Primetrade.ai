@@ -1,4 +1,4 @@
-
+const Task = require("../models/Task"); 
 exports.createTask = async (req, res) => {
   const { title, description } = req.body;
   if (!title || !description) {
@@ -31,7 +31,7 @@ exports.getTasks = async (req, res) => {
 
     res.json(tasks);
   } catch (err) {
-    console.error("Get Tasks Error:", err); // pure error log
+    console.error("Get Tasks Error:", err); 
     res.status(500).json({ message: "Server error" });
   }
 };
